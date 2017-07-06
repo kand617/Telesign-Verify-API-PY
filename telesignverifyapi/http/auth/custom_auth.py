@@ -18,6 +18,8 @@ class CustomAuth:
             http_request (HttpRequest): The HttpRequest object with fields you can modify.
 
         """
+         
+        # Build my headers
         # TODO: Add your custom authentication here
         # The following properties are available to use
         #     Configuration.customer_id

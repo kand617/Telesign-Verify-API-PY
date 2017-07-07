@@ -110,6 +110,7 @@ client = TelesignverifyapiClient(customer_id, api_key)
 ## <a name="list_of_controllers"></a>List of Controllers
 
 * [VerifyAPIController](#verify_api_controller)
+* [APIController](#api_controller)
 
 ## <a name="verify_api_controller"></a>![Class: ](https://apidocs.io/img/class.png ".VerifyAPIController") VerifyAPIController
 
@@ -144,6 +145,35 @@ def get_status(self,
 id = 'id'
 
 result = verify_api_client.get_status(id)
+
+```
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="api_controller"></a>![Class: ](https://apidocs.io/img/class.png ".APIController") APIController
+
+### Get controller instance
+
+An instance of the ``` APIController ``` class can be accessed from the API Client.
+
+```python
+ client_client = client.client
+```
+
+### <a name="get_verify_api"></a>![Method: ](https://apidocs.io/img/method.png ".APIController.get_verify_api") get_verify_api
+
+> TODO: Add a method description
+
+```python
+def get_verify_api(self)
+```
+
+#### Example Usage
+
+```python
+
+client_client.get_verify_api()
 
 ```
 

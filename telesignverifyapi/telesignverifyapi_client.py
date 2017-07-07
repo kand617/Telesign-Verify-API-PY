@@ -8,6 +8,7 @@
 from .decorators import lazy_property
 from .configuration import Configuration
 from .controllers.verify_api_controller import VerifyAPIController
+from .controllers.api_controller import APIController
 
 class TelesignverifyapiClient(object):
 
@@ -16,6 +17,10 @@ class TelesignverifyapiClient(object):
     @lazy_property
     def verify_api(self):
         return VerifyAPIController()
+
+    @lazy_property
+    def client(self):
+        return APIController()
 
 
     def __init__(self, 
